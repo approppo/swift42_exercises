@@ -1,0 +1,673 @@
+; ModuleID = '-'
+source_filename = "-"
+target datalayout = "e-m:o-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-apple-macosx10.9"
+
+%V5code26Simple = type <{ %SS, %Si }>
+%SS = type <{ %Vs11_StringCore }>
+%Vs11_StringCore = type <{ %GSqSv_, %Su, %GSqPs9AnyObject__ }>
+%GSqSv_ = type <{ [8 x i8] }>
+%Su = type <{ i64 }>
+%GSqPs9AnyObject__ = type <{ [8 x i8] }>
+%Si = type <{ i64 }>
+%Vs5Int32 = type <{ i32 }>
+%Sp = type <{ i8* }>
+%swift.type = type { i64 }
+%swift.protocol = type { i8*, i8*, i8*, i8*, i8*, i8*, i8*, i8*, i32, i32, i16, i16, i32 }
+%swift.type_metadata_record = type { i32, i32 }
+%objc_object = type opaque
+%swift.bridge = type opaque
+%swift.opaque = type opaque
+
+@_Tv5code23objVS_6Simple = hidden global %V5code26Simple zeroinitializer, align 16
+@_TZvOs11CommandLine5_argcVs5Int32 = external global %Vs5Int32, align 4
+@globalinit_33_FD9A49A256BEB6AF7C48013347ADC3BA_token4 = external global i64, align 8
+@_TZvOs11CommandLine11_unsafeArgvGSpGSqGSpVs4Int8___ = external global %Sp, align 8
+@_TMLGCs23_ContiguousArrayStorageP__ = linkonce_odr hidden global %swift.type* null, align 8
+@_TMLP_ = linkonce_odr hidden global %swift.type* null, align 8
+@_swift_getExistentialTypeMetadata = external global %swift.type* (i64, %swift.protocol**)*
+@_TMSS = external global %swift.type, align 8
+@0 = private unnamed_addr constant [7 x i8] c"First!\00"
+@1 = private unnamed_addr constant [5 x i8] c"Boom\00"
+@2 = private unnamed_addr constant [8 x i8] c"Second!\00"
+@_swift_slowDealloc = external global void (i8*, i64, i64)*
+@_swift_slowAlloc = external global i8* (i64, i64)*
+@_TWVV5code26Simple = hidden constant [20 x i8*] [i8* bitcast (void ([24 x i8]*, %swift.type*)* @_TwXXV5code26Simple to i8*), i8* bitcast (%swift.opaque* ([24 x i8]*, [24 x i8]*, %swift.type*)* @_TwCPV5code26Simple to i8*), i8* bitcast (%swift.opaque* ([24 x i8]*, %swift.type*)* @_TwprV5code26Simple to i8*), i8* bitcast (void ([24 x i8]*, %swift.type*)* @_TwdeV5code26Simple to i8*), i8* bitcast (void (%swift.opaque*, %swift.type*)* @_TwxxV5code26Simple to i8*), i8* bitcast (%swift.opaque* ([24 x i8]*, %swift.opaque*, %swift.type*)* @_TwCpV5code26Simple to i8*), i8* bitcast (%swift.opaque* (%swift.opaque*, %swift.opaque*, %swift.type*)* @_TwcpV5code26Simple to i8*), i8* bitcast (%swift.opaque* (%swift.opaque*, %swift.opaque*, %swift.type*)* @_TwcaV5code26Simple to i8*), i8* bitcast (%swift.opaque* ([24 x i8]*, %swift.opaque*, %swift.type*)* @_TwTkV5code26Simple to i8*), i8* bitcast (i8* (i8*, i8*, %swift.type*)* @__swift_memcpy32_8 to i8*), i8* bitcast (%swift.opaque* (%swift.opaque*, %swift.opaque*, %swift.type*)* @_TwtaV5code26Simple to i8*), i8* bitcast (%swift.opaque* ([24 x i8]*, %swift.type*)* @_TwalV5code26Simple to i8*), i8* bitcast (i8* (i8**, i8**, %swift.type*)* @__swift_copy_outline_pointer to i8*), i8* bitcast (void (%swift.opaque*, i64, %swift.type*)* @_TwXxV5code26Simple to i8*), i8* bitcast (%swift.opaque* (%swift.opaque*, %swift.opaque*, i64, %swift.type*)* @_TwCcV5code26Simple to i8*), i8* bitcast (i8* (i8*, i8*, i64, %swift.type*)* @__swift_memmove_array32_8 to i8*), i8* bitcast (i8* (i8*, i8*, i64, %swift.type*)* @__swift_memmove_array32_8 to i8*), i8* inttoptr (i64 32 to i8*), i8* inttoptr (i64 196615 to i8*), i8* inttoptr (i64 32 to i8*)], align 8
+@3 = private constant [15 x i8] c"V5code26Simple\00"
+@4 = private constant [10 x i8] c"test\00num\00\00"
+@_TMnV5code26Simple = hidden constant <{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }> <{ i32 trunc (i64 sub (i64 ptrtoint ([15 x i8]* @3 to i64), i64 ptrtoint (<{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }>* @_TMnV5code26Simple to i64)) to i32), i32 2, i32 3, i32 trunc (i64 sub (i64 ptrtoint ([10 x i8]* @4 to i64), i64 add (i64 ptrtoint (<{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }>* @_TMnV5code26Simple to i64), i64 12)) to i32), i32 trunc (i64 sub (i64 ptrtoint (%swift.type** (%swift.type*)* @get_field_types_Simple to i64), i64 add (i64 ptrtoint (<{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }>* @_TMnV5code26Simple to i64), i64 16)) to i32), i32 1, i32 trunc (i64 sub (i64 ptrtoint (%swift.type* ()* @_TMaV5code26Simple to i64), i64 add (i64 ptrtoint (<{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }>* @_TMnV5code26Simple to i64), i64 24)) to i32), i32 5, i32 0, i32 0, i32 0 }>, section "__TEXT,__const", align 8
+@_TMfV5code26Simple = internal constant <{ i8**, i64, i64, %swift.type*, i64, i64 }> <{ i8** getelementptr inbounds ([20 x i8*], [20 x i8*]* @_TWVV5code26Simple, i32 0, i32 0), i64 1, i64 sub (i64 ptrtoint (<{ i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }>* @_TMnV5code26Simple to i64), i64 add (i64 ptrtoint (<{ i8**, i64, i64, %swift.type*, i64, i64 }>* @_TMfV5code26Simple to i64), i64 16)), %swift.type* null, i64 0, i64 24 }>, align 8
+@5 = private constant [15 x i8] c"V5code26Simple\00", section "__TEXT,__swift3_typeref, regular, no_dead_strip"
+@6 = private constant [3 x i8] c"SS\00", section "__TEXT,__swift3_typeref, regular, no_dead_strip"
+@7 = private constant [5 x i8] c"test\00", section "__TEXT,__swift3_reflstr, regular, no_dead_strip"
+@8 = private constant [3 x i8] c"Si\00", section "__TEXT,__swift3_typeref, regular, no_dead_strip"
+@9 = private constant [4 x i8] c"num\00", section "__TEXT,__swift3_reflstr, regular, no_dead_strip"
+@_TMRfV5code26Simple = internal constant <{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }> <{ i32 trunc (i64 sub (i64 ptrtoint ([15 x i8]* @5 to i64), i64 ptrtoint (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i64)) to i32), i16 0, i16 12, i32 2, i32 0, i32 trunc (i64 sub (i64 ptrtoint ([3 x i8]* @6 to i64), i64 add (i64 ptrtoint (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i64), i64 16)) to i32), i32 trunc (i64 sub (i64 ptrtoint ([5 x i8]* @7 to i64), i64 add (i64 ptrtoint (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i64), i64 20)) to i32), i32 0, i32 trunc (i64 sub (i64 ptrtoint ([3 x i8]* @8 to i64), i64 add (i64 ptrtoint (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i64), i64 28)) to i32), i32 trunc (i64 sub (i64 ptrtoint ([4 x i8]* @9 to i64), i64 add (i64 ptrtoint (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i64), i64 32)) to i32) }>, section "__TEXT,__swift3_fieldmd, regular, no_dead_strip", align 4
+@"\01l_type_metadata_table" = private constant [1 x %swift.type_metadata_record] [%swift.type_metadata_record { i32 trunc (i64 sub (i64 ptrtoint (i64* getelementptr inbounds (<{ i8**, i64, i64, %swift.type*, i64, i64 }>, <{ i8**, i64, i64, %swift.type*, i64, i64 }>* @_TMfV5code26Simple, i32 0, i32 1) to i64), i64 ptrtoint ([1 x %swift.type_metadata_record]* @"\01l_type_metadata_table" to i64)) to i32), i32 1 }], section "__TEXT, __swift2_types, regular, no_dead_strip", align 8
+@__swift_reflection_version = linkonce_odr hidden constant i16 1
+@field_type_vector_Simple = private global %swift.type** null
+@_TMSi = external global %swift.type, align 8
+@llvm.used = appending global [3 x i8*] [i8* bitcast ([1 x %swift.type_metadata_record]* @"\01l_type_metadata_table" to i8*), i8* bitcast (<{ i32, i16, i16, i32, i32, i32, i32, i32, i32, i32 }>* @_TMRfV5code26Simple to i8*), i8* bitcast (i16* @__swift_reflection_version to i8*)], section "llvm.metadata"
+
+@_TMV5code26Simple = hidden alias %swift.type, bitcast (i64* getelementptr inbounds (<{ i8**, i64, i64, %swift.type*, i64, i64 }>, <{ i8**, i64, i64, %swift.type*, i64, i64 }>* @_TMfV5code26Simple, i32 0, i32 1) to %swift.type*)
+
+define i32 @main(i32, i8**) #0 {
+entry:
+  %protocols.i.i = alloca [0 x %swift.protocol*], align 8
+  store i32 %0, i32* getelementptr inbounds (%Vs5Int32, %Vs5Int32* @_TZvOs11CommandLine5_argcVs5Int32, i64 0, i32 0), align 4
+  %2 = load i64, i64* @globalinit_33_FD9A49A256BEB6AF7C48013347ADC3BA_token4, align 8
+  %3 = icmp eq i64 %2, -1
+  br i1 %3, label %once_done, label %once_not_done
+
+once_not_done:                                    ; preds = %entry
+  tail call void @swift_once(i64* nonnull @globalinit_33_FD9A49A256BEB6AF7C48013347ADC3BA_token4, i8* nonnull bitcast (void ()* @globalinit_33_FD9A49A256BEB6AF7C48013347ADC3BA_func4 to i8*))
+  br label %once_done
+
+once_done:                                        ; preds = %once_not_done, %entry
+  store i8** %1, i8*** bitcast (%Sp* @_TZvOs11CommandLine11_unsafeArgvGSpGSqGSpVs4Int8___ to i8***), align 8
+  %4 = load %swift.type*, %swift.type** @_TMLGCs23_ContiguousArrayStorageP__, align 8
+  %5 = icmp eq %swift.type* %4, null
+  br i1 %5, label %cacheIsNull.i, label %_TMaGCs23_ContiguousArrayStorageP__.exit
+
+cacheIsNull.i:                                    ; preds = %once_done
+  %6 = load %swift.type*, %swift.type** @_TMLP_, align 8
+  %7 = icmp eq %swift.type* %6, null
+  br i1 %7, label %cacheIsNull.i.i, label %_TMaP_.exit.i
+
+cacheIsNull.i.i:                                  ; preds = %cacheIsNull.i
+  %8 = bitcast [0 x %swift.protocol*]* %protocols.i.i to i8*
+  call void @llvm.lifetime.start(i64 0, i8* %8) #9
+  %9 = getelementptr inbounds [0 x %swift.protocol*], [0 x %swift.protocol*]* %protocols.i.i, i64 0, i64 0
+  %10 = call %swift.type* @rt_swift_getExistentialTypeMetadata(i64 0, %swift.protocol** %9) #9
+  call void @llvm.lifetime.end(i64 0, i8* %8) #9
+  store atomic %swift.type* %10, %swift.type** @_TMLP_ release, align 8
+  br label %_TMaP_.exit.i
+
+_TMaP_.exit.i:                                    ; preds = %cacheIsNull.i.i, %cacheIsNull.i
+  %11 = phi %swift.type* [ %6, %cacheIsNull.i ], [ %10, %cacheIsNull.i.i ]
+  %12 = call %swift.type* @_TMaCs23_ContiguousArrayStorage(%swift.type* %11) #10
+  store atomic %swift.type* %12, %swift.type** @_TMLGCs23_ContiguousArrayStorageP__ release, align 8
+  br label %_TMaGCs23_ContiguousArrayStorageP__.exit
+
+_TMaGCs23_ContiguousArrayStorageP__.exit:         ; preds = %once_done, %_TMaP_.exit.i
+  %13 = phi %swift.type* [ %4, %once_done ], [ %12, %_TMaP_.exit.i ]
+  %14 = call %objc_object* @swift_bufferAllocate(%swift.type* %13, i64 64, i64 7)
+  %15 = bitcast %objc_object* %14 to i8*
+  %16 = getelementptr inbounds i8, i8* %15, i64 16
+  %17 = bitcast i8* %16 to <2 x i64>*
+  store <2 x i64> <i64 1, i64 2>, <2 x i64>* %17, align 8
+  %18 = bitcast %objc_object* %14 to %swift.bridge*
+  %19 = getelementptr inbounds i8, i8* %15, i64 32
+  %20 = getelementptr inbounds i8, i8* %15, i64 56
+  %21 = bitcast i8* %20 to %swift.type**
+  store %swift.type* @_TMSS, %swift.type** %21, align 8
+  %22 = bitcast i8* %19 to <2 x i64>*
+  store <2 x i64> <i64 ptrtoint ([7 x i8]* @0 to i64), i64 6>, <2 x i64>* %22, align 8
+  %object._core._owner = getelementptr inbounds i8, i8* %15, i64 48
+  %23 = bitcast i8* %object._core._owner to i64*
+  store i64 0, i64* %23, align 8
+  %24 = call { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A0_()
+  %25 = extractvalue { i64, i64, i64 } %24, 0
+  %26 = extractvalue { i64, i64, i64 } %24, 1
+  %27 = extractvalue { i64, i64, i64 } %24, 2
+  %28 = call { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A1_()
+  %29 = extractvalue { i64, i64, i64 } %28, 0
+  %30 = extractvalue { i64, i64, i64 } %28, 1
+  %31 = extractvalue { i64, i64, i64 } %28, 2
+  call void @_TFs5printFTGSaP__9separatorSS10terminatorSS_T_(%swift.bridge* %18, i64 %25, i64 %26, i64 %27, i64 %29, i64 %30, i64 %31)
+  store <2 x i64> <i64 ptrtoint ([5 x i8]* @1 to i64), i64 4>, <2 x i64>* bitcast (%V5code26Simple* @_Tv5code23objVS_6Simple to <2 x i64>*), align 16
+  store <2 x i64> <i64 0, i64 9>, <2 x i64>* bitcast (%GSqPs9AnyObject__* getelementptr inbounds (%V5code26Simple, %V5code26Simple* @_Tv5code23objVS_6Simple, i64 0, i32 0, i32 0, i32 2) to <2 x i64>*), align 16
+  %32 = call %objc_object* @swift_bufferAllocate(%swift.type* %13, i64 64, i64 7)
+  %33 = bitcast %objc_object* %32 to i8*
+  %34 = getelementptr inbounds i8, i8* %33, i64 16
+  %35 = bitcast i8* %34 to <2 x i64>*
+  store <2 x i64> <i64 1, i64 2>, <2 x i64>* %35, align 8
+  %36 = bitcast %objc_object* %32 to %swift.bridge*
+  %37 = getelementptr inbounds i8, i8* %33, i64 32
+  %38 = getelementptr inbounds i8, i8* %33, i64 56
+  %39 = bitcast i8* %38 to %swift.type**
+  store %swift.type* @_TMSS, %swift.type** %39, align 8
+  %40 = bitcast i8* %37 to <2 x i64>*
+  store <2 x i64> <i64 ptrtoint ([8 x i8]* @2 to i64), i64 7>, <2 x i64>* %40, align 8
+  %object2._core._owner = getelementptr inbounds i8, i8* %33, i64 48
+  %41 = bitcast i8* %object2._core._owner to i64*
+  store i64 0, i64* %41, align 8
+  %42 = call { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A0_()
+  %43 = extractvalue { i64, i64, i64 } %42, 0
+  %44 = extractvalue { i64, i64, i64 } %42, 1
+  %45 = extractvalue { i64, i64, i64 } %42, 2
+  %46 = call { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A1_()
+  %47 = extractvalue { i64, i64, i64 } %46, 0
+  %48 = extractvalue { i64, i64, i64 } %46, 1
+  %49 = extractvalue { i64, i64, i64 } %46, 2
+  call void @_TFs5printFTGSaP__9separatorSS10terminatorSS_T_(%swift.bridge* %36, i64 %43, i64 %44, i64 %45, i64 %47, i64 %48, i64 %49)
+  ret i32 0
+}
+
+; Function Attrs: nounwind
+define hidden { i64, i64, i64 } @_TFV5code26Simpleg4testSS(%V5code26Simple* noalias nocapture readonly dereferenceable(32)) #1 {
+entry:
+  %1 = bitcast %V5code26Simple* %0 to i64*
+  %2 = load i64, i64* %1, align 8
+  %.test._core._countAndFlags._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 1, i32 0
+  %3 = load i64, i64* %.test._core._countAndFlags._value, align 8
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 2
+  %4 = bitcast %GSqPs9AnyObject__* %.test._core._owner to i64*
+  %5 = load i64, i64* %4, align 8
+  %6 = inttoptr i64 %5 to %objc_object*
+  %7 = insertvalue { i64, i64, i64 } undef, i64 %2, 0
+  %8 = insertvalue { i64, i64, i64 } %7, i64 %3, 1
+  %9 = insertvalue { i64, i64, i64 } %8, i64 %5, 2
+  tail call void @swift_unknownRetain(%objc_object* %6) #9
+  ret { i64, i64, i64 } %9
+}
+
+; Function Attrs: nounwind
+define hidden void @_TFV5code26Simples4testSS(i64, i64, i64, %V5code26Simple* nocapture dereferenceable(32)) #1 {
+entry:
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 0, i32 0, i32 0, i32 2
+  %4 = bitcast %GSqPs9AnyObject__* %.test._core._owner to i64*
+  %5 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %6 = load %objc_object*, %objc_object** %5, align 8
+  %7 = bitcast %V5code26Simple* %3 to i64*
+  store i64 %0, i64* %7, align 8
+  %.test._core1._countAndFlags._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 0, i32 0, i32 0, i32 1, i32 0
+  store i64 %1, i64* %.test._core1._countAndFlags._value, align 8
+  store i64 %2, i64* %4, align 8
+  tail call void @swift_unknownRelease(%objc_object* %6) #9
+  ret void
+}
+
+; Function Attrs: norecurse nounwind readnone
+define hidden { i8*, i64 } @_TFV5code26Simplem4testSS(i8* nocapture readnone, [24 x i8]* nocapture readnone dereferenceable(24), %V5code26Simple* nocapture dereferenceable(32)) #2 {
+entry:
+  %3 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 0, i32 0, i32 0, i32 0, i64 0
+  %4 = insertvalue { i8*, i64 } undef, i8* %3, 0
+  %5 = insertvalue { i8*, i64 } %4, i64 0, 1
+  ret { i8*, i64 } %5
+}
+
+; Function Attrs: norecurse nounwind readonly
+define hidden i64 @_TFV5code26Simpleg3numSi(%V5code26Simple* noalias nocapture readonly dereferenceable(32)) #3 {
+entry:
+  %.num._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  %1 = load i64, i64* %.num._value, align 8
+  ret i64 %1
+}
+
+; Function Attrs: norecurse nounwind
+define hidden void @_TFV5code26Simples3numSi(i64, %V5code26Simple* nocapture dereferenceable(32)) #4 {
+entry:
+  %.num._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %1, i64 0, i32 1, i32 0
+  store i64 %0, i64* %.num._value, align 8
+  ret void
+}
+
+; Function Attrs: norecurse nounwind readnone
+define hidden { i8*, i64 } @_TFV5code26Simplem3numSi(i8* nocapture readnone, [24 x i8]* nocapture readnone dereferenceable(24), %V5code26Simple* nocapture dereferenceable(32)) #2 {
+entry:
+  %.num = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 1
+  %3 = bitcast %Si* %.num to i8*
+  %4 = insertvalue { i8*, i64 } undef, i8* %3, 0
+  %5 = insertvalue { i8*, i64 } %4, i64 0, 1
+  ret { i8*, i64 } %5
+}
+
+; Function Attrs: norecurse nounwind
+define hidden void @_TFV5code26SimpleCfT4testSS3numSi_S0_(%V5code26Simple* noalias nocapture sret, i64, i64, i64, i64) #4 {
+entry:
+  %5 = bitcast %V5code26Simple* %0 to i64*
+  store i64 %1, i64* %5, align 8
+  %.test._core._countAndFlags._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 1, i32 0
+  store i64 %2, i64* %.test._core._countAndFlags._value, align 8
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 2
+  %6 = bitcast %GSqPs9AnyObject__* %.test._core._owner to i64*
+  store i64 %3, i64* %6, align 8
+  %.num._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  store i64 %4, i64* %.num._value, align 8
+  ret void
+}
+
+; Function Attrs: norecurse nounwind
+define hidden void @_TFV5code26SimpleCfT_S0_(%V5code26Simple* noalias nocapture sret) #4 {
+entry:
+  %1 = bitcast %V5code26Simple* %0 to <2 x i64>*
+  store <2 x i64> <i64 ptrtoint ([5 x i8]* @1 to i64), i64 4>, <2 x i64>* %1, align 8
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 2
+  %2 = bitcast %GSqPs9AnyObject__* %.test._core._owner to <2 x i64>*
+  store <2 x i64> <i64 0, i64 9>, <2 x i64>* %2, align 8
+  ret void
+}
+
+declare void @globalinit_33_FD9A49A256BEB6AF7C48013347ADC3BA_func4() #0
+
+declare void @swift_once(i64*, i8*)
+
+; Function Attrs: argmemonly nounwind
+declare void @llvm.lifetime.start(i64, i8* nocapture) #5
+
+; Function Attrs: noinline nounwind
+define linkonce_odr hidden %swift.type* @rt_swift_getExistentialTypeMetadata(i64, %swift.protocol**) #6 {
+entry:
+  %load = load %swift.type* (i64, %swift.protocol**)*, %swift.type* (i64, %swift.protocol**)** @_swift_getExistentialTypeMetadata, align 8
+  %2 = tail call %swift.type* %load(i64 %0, %swift.protocol** %1) #9
+  ret %swift.type* %2
+}
+
+; Function Attrs: argmemonly nounwind
+declare void @llvm.lifetime.end(i64, i8* nocapture) #5
+
+declare %swift.type* @_TMaCs23_ContiguousArrayStorage(%swift.type*) #0
+
+; Function Attrs: argmemonly nounwind
+declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #5
+
+; Function Attrs: argmemonly nounwind
+declare void @llvm.memmove.p0i8.p0i8.i64(i8* nocapture, i8* nocapture readonly, i64, i32, i1) #5
+
+; Function Attrs: noinline
+declare void @_TFs5printFTGSaP__9separatorSS10terminatorSS_T_(%swift.bridge*, i64, i64, i64, i64, i64, i64) #7
+
+declare %objc_object* @swift_bufferAllocate(%swift.type*, i64, i64) #0
+
+; Function Attrs: noinline
+declare { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A0_() #7
+
+; Function Attrs: noinline
+declare { i64, i64, i64 } @_TIFs5printFTGSaP__9separatorSS10terminatorSS_T_A1_() #7
+
+declare void @swift_unknownRetain(%objc_object*)
+
+declare void @swift_unknownRelease(%objc_object*)
+
+; Function Attrs: nounwind
+define linkonce_odr hidden void @_TwXXV5code26Simple([24 x i8]* nocapture readonly %buffer, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %storage-slot = bitcast [24 x i8]* %buffer to %V5code26Simple**
+  %0 = load %V5code26Simple*, %V5code26Simple** %storage-slot, align 8
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 0, i32 0, i32 2
+  %1 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %2 = load %objc_object*, %objc_object** %1, align 8
+  tail call void @swift_unknownRelease(%objc_object* %2) #9
+  %3 = bitcast [24 x i8]* %buffer to i8**
+  %storage = load i8*, i8** %3, align 8
+  tail call void @rt_swift_slowDealloc(i8* %storage, i64 32, i64 7) #9
+  ret void
+}
+
+; Function Attrs: noinline nounwind
+define linkonce_odr hidden void @rt_swift_slowDealloc(i8*, i64, i64) #6 {
+entry:
+  %load = load void (i8*, i64, i64)*, void (i8*, i64, i64)** @_swift_slowDealloc, align 8
+  tail call void %load(i8* %0, i64 %1, i64 %2) #9
+  ret void
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwCPV5code26Simple([24 x i8]* nocapture %dest, [24 x i8]* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = tail call noalias i8* @rt_swift_slowAlloc(i64 32, i64 7) #9
+  %1 = bitcast [24 x i8]* %dest to i8**
+  store i8* %0, i8** %1, align 8
+  %storage-slot = bitcast [24 x i8]* %src to %V5code26Simple**
+  %2 = load %V5code26Simple*, %V5code26Simple** %storage-slot, align 8
+  %3 = bitcast %V5code26Simple* %2 to i64*
+  %4 = load i64, i64* %3, align 8
+  %5 = bitcast i8* %0 to i64*
+  store i64 %4, i64* %5, align 8
+  %.test._core._countAndFlags = getelementptr inbounds i8, i8* %0, i64 8
+  %6 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 0, i32 0, i32 1, i32 0
+  %7 = bitcast i8* %.test._core._countAndFlags to i64*
+  %8 = load i64, i64* %6, align 8
+  store i64 %8, i64* %7, align 8
+  %.test._core._owner = getelementptr inbounds i8, i8* %0, i64 16
+  %.test1._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 0, i32 0, i32 2
+  %9 = bitcast i8* %.test._core._owner to %objc_object**
+  %10 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to %objc_object**
+  %11 = load %objc_object*, %objc_object** %10, align 8
+  store %objc_object* %11, %objc_object** %9, align 8
+  %.num = getelementptr inbounds i8, i8* %0, i64 24
+  %12 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 1, i32 0
+  %13 = bitcast i8* %.num to i64*
+  %14 = load i64, i64* %12, align 8
+  store i64 %14, i64* %13, align 8
+  %15 = bitcast i8* %0 to %swift.opaque*
+  tail call void @swift_unknownRetain(%objc_object* %11) #9
+  ret %swift.opaque* %15
+}
+
+; Function Attrs: noinline nounwind
+define linkonce_odr hidden i8* @rt_swift_slowAlloc(i64, i64) #6 {
+entry:
+  %load = load i8* (i64, i64)*, i8* (i64, i64)** @_swift_slowAlloc, align 8
+  %2 = tail call i8* %load(i64 %0, i64 %1) #9
+  ret i8* %2
+}
+
+; Function Attrs: norecurse nounwind readonly
+define linkonce_odr hidden %swift.opaque* @_TwprV5code26Simple([24 x i8]* nocapture readonly %buffer, %swift.type* nocapture readnone %Simple) #3 {
+entry:
+  %0 = bitcast [24 x i8]* %buffer to %swift.opaque**
+  %1 = load %swift.opaque*, %swift.opaque** %0, align 8
+  ret %swift.opaque* %1
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden void @_TwdeV5code26Simple([24 x i8]* nocapture readonly %buffer, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = bitcast [24 x i8]* %buffer to i8**
+  %storage = load i8*, i8** %0, align 8
+  tail call void @rt_swift_slowDealloc(i8* %storage, i64 32, i64 7) #9
+  ret void
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden void @_TwxxV5code26Simple(%swift.opaque* nocapture readonly %object, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %.test._core = bitcast %swift.opaque* %object to %Vs11_StringCore*
+  %.test._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 2
+  %0 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %1 = load %objc_object*, %objc_object** %0, align 8
+  tail call void @swift_unknownRelease(%objc_object* %1) #9
+  ret void
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwCpV5code26Simple([24 x i8]* nocapture %dest, %swift.opaque* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = bitcast %swift.opaque* %src to %V5code26Simple*
+  %1 = tail call noalias i8* @rt_swift_slowAlloc(i64 32, i64 7) #9
+  %2 = bitcast [24 x i8]* %dest to i8**
+  store i8* %1, i8** %2, align 8
+  %.test1._core = bitcast %swift.opaque* %src to %Vs11_StringCore*
+  %3 = bitcast %swift.opaque* %src to <2 x i64>*
+  %4 = load <2 x i64>, <2 x i64>* %3, align 8
+  %5 = bitcast i8* %1 to <2 x i64>*
+  store <2 x i64> %4, <2 x i64>* %5, align 8
+  %.test._core._owner = getelementptr inbounds i8, i8* %1, i64 16
+  %.test1._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 2
+  %6 = bitcast i8* %.test._core._owner to %objc_object**
+  %7 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to %objc_object**
+  %8 = load %objc_object*, %objc_object** %7, align 8
+  store %objc_object* %8, %objc_object** %6, align 8
+  %.num = getelementptr inbounds i8, i8* %1, i64 24
+  %9 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  %10 = bitcast i8* %.num to i64*
+  %11 = load i64, i64* %9, align 8
+  store i64 %11, i64* %10, align 8
+  %12 = bitcast i8* %1 to %swift.opaque*
+  tail call void @swift_unknownRetain(%objc_object* %8) #9
+  ret %swift.opaque* %12
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwcpV5code26Simple(%swift.opaque* %dest, %swift.opaque* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = bitcast %swift.opaque* %dest to %V5code26Simple*
+  %1 = bitcast %swift.opaque* %src to %V5code26Simple*
+  %.test._core = bitcast %swift.opaque* %dest to %Vs11_StringCore*
+  %.test1._core = bitcast %swift.opaque* %src to %Vs11_StringCore*
+  %2 = bitcast %swift.opaque* %src to i64*
+  %3 = load i64, i64* %2, align 8
+  %4 = bitcast %swift.opaque* %dest to i64*
+  store i64 %3, i64* %4, align 8
+  %5 = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 1, i32 0
+  %6 = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 1, i32 0
+  %7 = load i64, i64* %5, align 8
+  store i64 %7, i64* %6, align 8
+  %.test._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 2
+  %.test1._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 2
+  %8 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %9 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to %objc_object**
+  %10 = load %objc_object*, %objc_object** %9, align 8
+  store %objc_object* %10, %objc_object** %8, align 8
+  %11 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %1, i64 0, i32 1, i32 0
+  %12 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  %13 = load i64, i64* %11, align 8
+  store i64 %13, i64* %12, align 8
+  tail call void @swift_unknownRetain(%objc_object* %10) #9
+  ret %swift.opaque* %dest
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwcaV5code26Simple(%swift.opaque* %dest, %swift.opaque* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = bitcast %swift.opaque* %dest to %V5code26Simple*
+  %1 = bitcast %swift.opaque* %src to %V5code26Simple*
+  %.test._core = bitcast %swift.opaque* %dest to %Vs11_StringCore*
+  %.test1._core = bitcast %swift.opaque* %src to %Vs11_StringCore*
+  %2 = bitcast %swift.opaque* %src to i64*
+  %3 = load i64, i64* %2, align 8
+  %4 = bitcast %swift.opaque* %dest to i64*
+  store i64 %3, i64* %4, align 8
+  %.test._core._countAndFlags._value = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 1, i32 0
+  %.test1._core._countAndFlags._value = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 1, i32 0
+  %5 = load i64, i64* %.test1._core._countAndFlags._value, align 8
+  store i64 %5, i64* %.test._core._countAndFlags._value, align 8
+  %.test._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 2
+  %.test1._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 2
+  %6 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %7 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to %objc_object**
+  %8 = load %objc_object*, %objc_object** %6, align 8
+  %9 = load %objc_object*, %objc_object** %7, align 8
+  store %objc_object* %9, %objc_object** %6, align 8
+  tail call void @swift_unknownRetain(%objc_object* %9) #9
+  tail call void @swift_unknownRelease(%objc_object* %8) #9
+  %.num._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  %.num2._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %1, i64 0, i32 1, i32 0
+  %10 = load i64, i64* %.num2._value, align 8
+  store i64 %10, i64* %.num._value, align 8
+  ret %swift.opaque* %dest
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwTkV5code26Simple([24 x i8]* nocapture %dest, %swift.opaque* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = tail call noalias i8* @rt_swift_slowAlloc(i64 32, i64 7) #9
+  %1 = bitcast [24 x i8]* %dest to i8**
+  store i8* %0, i8** %1, align 8
+  %2 = bitcast %swift.opaque* %src to i8*
+  tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* %0, i8* %2, i64 32, i32 8, i1 false)
+  %3 = bitcast i8* %0 to %swift.opaque*
+  ret %swift.opaque* %3
+}
+
+; Function Attrs: norecurse nounwind
+define linkonce_odr hidden i8* @__swift_memcpy32_8(i8*, i8* nocapture readonly, %swift.type* nocapture readnone) #8 {
+entry:
+  tail call void @llvm.memcpy.p0i8.p0i8.i64(i8* %0, i8* %1, i64 32, i32 8, i1 false)
+  ret i8* %0
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwtaV5code26Simple(%swift.opaque* %dest, %swift.opaque* nocapture readonly %src, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = bitcast %swift.opaque* %dest to %V5code26Simple*
+  %1 = bitcast %swift.opaque* %src to %V5code26Simple*
+  %.test._core = bitcast %swift.opaque* %dest to %Vs11_StringCore*
+  %.test1._core = bitcast %swift.opaque* %src to %Vs11_StringCore*
+  %2 = bitcast %swift.opaque* %src to i64*
+  %3 = load i64, i64* %2, align 8
+  %4 = bitcast %swift.opaque* %dest to i64*
+  store i64 %3, i64* %4, align 8
+  %.test._core._countAndFlags._value = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 1, i32 0
+  %.test1._core._countAndFlags._value = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 1, i32 0
+  %5 = load i64, i64* %.test1._core._countAndFlags._value, align 8
+  store i64 %5, i64* %.test._core._countAndFlags._value, align 8
+  %.test._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test._core, i64 0, i32 2
+  %.test1._core._owner = getelementptr inbounds %Vs11_StringCore, %Vs11_StringCore* %.test1._core, i64 0, i32 2
+  %6 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %7 = load %objc_object*, %objc_object** %6, align 8
+  %8 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to i64*
+  %9 = load i64, i64* %8, align 8
+  %10 = bitcast %GSqPs9AnyObject__* %.test._core._owner to i64*
+  store i64 %9, i64* %10, align 8
+  tail call void @swift_unknownRelease(%objc_object* %7) #9
+  %.num._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %0, i64 0, i32 1, i32 0
+  %.num2._value = getelementptr inbounds %V5code26Simple, %V5code26Simple* %1, i64 0, i32 1, i32 0
+  %11 = load i64, i64* %.num2._value, align 8
+  store i64 %11, i64* %.num._value, align 8
+  ret %swift.opaque* %dest
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwalV5code26Simple([24 x i8]* nocapture %buffer, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = tail call noalias i8* @rt_swift_slowAlloc(i64 32, i64 7) #9
+  %1 = bitcast [24 x i8]* %buffer to i8**
+  store i8* %0, i8** %1, align 8
+  %2 = bitcast i8* %0 to %swift.opaque*
+  ret %swift.opaque* %2
+}
+
+; Function Attrs: norecurse nounwind
+define linkonce_odr hidden i8* @__swift_copy_outline_pointer(i8** nocapture, i8** nocapture readonly, %swift.type* nocapture readnone) #8 {
+entry:
+  %3 = load i8*, i8** %1, align 8
+  store i8* %3, i8** %0, align 8
+  ret i8* %3
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden void @_TwXxV5code26Simple(%swift.opaque* nocapture readonly %array, i64 %count, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = icmp eq i64 %count, 0
+  br i1 %0, label %exit, label %loop.preheader
+
+loop.preheader:                                   ; preds = %entry
+  %1 = bitcast %swift.opaque* %array to %V5code26Simple*
+  br label %loop
+
+loop:                                             ; preds = %loop.preheader, %loop
+  %2 = phi %V5code26Simple* [ %7, %loop ], [ %1, %loop.preheader ]
+  %3 = phi i64 [ %6, %loop ], [ %count, %loop.preheader ]
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 0, i32 0, i32 0, i32 2
+  %4 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %5 = load %objc_object*, %objc_object** %4, align 8
+  tail call void @swift_unknownRelease(%objc_object* %5) #9
+  %6 = add i64 %3, -1
+  %7 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %2, i64 1
+  %8 = icmp eq i64 %6, 0
+  br i1 %8, label %exit.loopexit, label %loop
+
+exit.loopexit:                                    ; preds = %loop
+  br label %exit
+
+exit:                                             ; preds = %exit.loopexit, %entry
+  ret void
+}
+
+; Function Attrs: nounwind
+define linkonce_odr hidden %swift.opaque* @_TwCcV5code26Simple(%swift.opaque* %dest, %swift.opaque* nocapture readonly %src, i64 %count, %swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = icmp eq i64 %count, 0
+  br i1 %0, label %exit, label %loop.preheader
+
+loop.preheader:                                   ; preds = %entry
+  %1 = bitcast %swift.opaque* %src to %V5code26Simple*
+  %2 = bitcast %swift.opaque* %dest to %V5code26Simple*
+  br label %loop
+
+loop:                                             ; preds = %loop.preheader, %loop
+  %3 = phi %V5code26Simple* [ %20, %loop ], [ %1, %loop.preheader ]
+  %4 = phi %V5code26Simple* [ %19, %loop ], [ %2, %loop.preheader ]
+  %5 = phi i64 [ %18, %loop ], [ %count, %loop.preheader ]
+  %6 = bitcast %V5code26Simple* %3 to i64*
+  %7 = load i64, i64* %6, align 8
+  %8 = bitcast %V5code26Simple* %4 to i64*
+  store i64 %7, i64* %8, align 8
+  %9 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 0, i32 0, i32 0, i32 1, i32 0
+  %10 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %4, i64 0, i32 0, i32 0, i32 1, i32 0
+  %11 = load i64, i64* %9, align 8
+  store i64 %11, i64* %10, align 8
+  %.test._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %4, i64 0, i32 0, i32 0, i32 2
+  %.test1._core._owner = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 0, i32 0, i32 0, i32 2
+  %12 = bitcast %GSqPs9AnyObject__* %.test._core._owner to %objc_object**
+  %13 = bitcast %GSqPs9AnyObject__* %.test1._core._owner to %objc_object**
+  %14 = load %objc_object*, %objc_object** %13, align 8
+  store %objc_object* %14, %objc_object** %12, align 8
+  %15 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 0, i32 1, i32 0
+  %16 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %4, i64 0, i32 1, i32 0
+  %17 = load i64, i64* %15, align 8
+  store i64 %17, i64* %16, align 8
+  %18 = add i64 %5, -1
+  %19 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %4, i64 1
+  %20 = getelementptr inbounds %V5code26Simple, %V5code26Simple* %3, i64 1
+  %21 = icmp eq i64 %18, 0
+  tail call void @swift_unknownRetain(%objc_object* %14) #9
+  br i1 %21, label %exit.loopexit, label %loop
+
+exit.loopexit:                                    ; preds = %loop
+  br label %exit
+
+exit:                                             ; preds = %exit.loopexit, %entry
+  ret %swift.opaque* %dest
+}
+
+; Function Attrs: norecurse nounwind
+define linkonce_odr hidden i8* @__swift_memmove_array32_8(i8*, i8* nocapture readonly, i64, %swift.type* nocapture readnone) #8 {
+entry:
+  %4 = shl nuw i64 %2, 5
+  tail call void @llvm.memmove.p0i8.p0i8.i64(i8* %0, i8* %1, i64 %4, i32 8, i1 false)
+  ret i8* %0
+}
+
+; Function Attrs: nounwind
+define private %swift.type** @get_field_types_Simple(%swift.type* nocapture readnone %Simple) #1 {
+entry:
+  %0 = load %swift.type**, %swift.type*** @field_type_vector_Simple, align 8
+  %1 = icmp eq %swift.type** %0, null
+  br i1 %1, label %build_field_types, label %done
+
+build_field_types:                                ; preds = %entry
+  %2 = tail call noalias i8* @rt_swift_slowAlloc(i64 16, i64 7) #9
+  %3 = bitcast i8* %2 to %swift.type**
+  %4 = bitcast i8* %2 to <2 x %swift.type*>*
+  store <2 x %swift.type*> <%swift.type* @_TMSS, %swift.type* @_TMSi>, <2 x %swift.type*>* %4, align 8
+  %5 = ptrtoint i8* %2 to i64
+  %6 = cmpxchg i64* bitcast (%swift.type*** @field_type_vector_Simple to i64*), i64 0, i64 %5 seq_cst seq_cst
+  %7 = extractvalue { i64, i1 } %6, 1
+  br i1 %7, label %done, label %race_lost
+
+race_lost:                                        ; preds = %build_field_types
+  %8 = extractvalue { i64, i1 } %6, 0
+  tail call void @rt_swift_slowDealloc(i8* %2, i64 16, i64 7) #9
+  %9 = inttoptr i64 %8 to %swift.type**
+  br label %done
+
+done:                                             ; preds = %race_lost, %build_field_types, %entry
+  %10 = phi %swift.type** [ %0, %entry ], [ %3, %build_field_types ], [ %9, %race_lost ]
+  ret %swift.type** %10
+}
+
+; Function Attrs: norecurse nounwind readnone
+define hidden %swift.type* @_TMaV5code26Simple() #2 {
+entry:
+  ret %swift.type* bitcast (i64* getelementptr inbounds (<{ i8**, i64, i64, %swift.type*, i64, i64 }>, <{ i8**, i64, i64, %swift.type*, i64, i64 }>* @_TMfV5code26Simple, i64 0, i32 1) to %swift.type*)
+}
+
+attributes #0 = { "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #1 = { nounwind "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #2 = { norecurse nounwind readnone "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #3 = { norecurse nounwind readonly "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #4 = { norecurse nounwind "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #5 = { argmemonly nounwind }
+attributes #6 = { noinline nounwind }
+attributes #7 = { noinline "no-frame-pointer-elim"="true" "no-frame-pointer-elim-non-leaf" "target-cpu"="core2" "target-features"="+ssse3,+cx16,+fxsr,+mmx,+sse,+sse2,+sse3" }
+attributes #8 = { norecurse nounwind }
+attributes #9 = { nounwind }
+attributes #10 = { nounwind readnone }
+
+!llvm.module.flags = !{!0, !1, !2, !3, !4, !5, !9, !10}
+
+!0 = !{i32 1, !"Objective-C Version", i32 2}
+!1 = !{i32 1, !"Objective-C Image Info Version", i32 0}
+!2 = !{i32 1, !"Objective-C Image Info Section", !"__DATA, __objc_imageinfo, regular, no_dead_strip"}
+!3 = !{i32 4, !"Objective-C Garbage Collection", i32 1024}
+!4 = !{i32 1, !"Objective-C Class Properties", i32 64}
+!5 = !{i32 6, !"Linker Options", !6}
+!6 = !{!7, !8}
+!7 = !{!"-lswiftCore"}
+!8 = !{!"-lobjc"}
+!9 = !{i32 1, !"PIC Level", i32 2}
+!10 = !{i32 1, !"Swift Version", i32 4}

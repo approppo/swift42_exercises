@@ -2,8 +2,6 @@ protocol Character {
     func attack()
 }
 
-
-// tag::extension[]
 protocol MagicBeing {
     func castSpell()
 }
@@ -13,10 +11,7 @@ extension MagicBeing {
         print("turn rock into monsters!")
     }
 }
-// end::extension[]
 
-
-// tag::game[]
 enum Enemy {
     case none
     case dragon
@@ -49,10 +44,7 @@ class Magician : Character, MagicBeing {
         print("throw lightning!")
     }
 }
-// end::game[]
 
-
-// tag::finally[]
 let knight = Knight()
 knight.enemy = .dragon
 knight.attack()
@@ -64,5 +56,4 @@ princess.castSpell()
 let magician = Magician()
 magician.attack()
 magician.castSpell()
-// end::finally[]
 
