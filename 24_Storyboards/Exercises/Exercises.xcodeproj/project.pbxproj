@@ -117,7 +117,6 @@
 				TargetAttributes = {
 					B01C09B41E54720B00A94B2F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AN4B7258WJ;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -306,7 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AN4B7258WJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Exercises/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = training.akosma.Exercises;
@@ -319,7 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AN4B7258WJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Exercises/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = training.akosma.Exercises;
