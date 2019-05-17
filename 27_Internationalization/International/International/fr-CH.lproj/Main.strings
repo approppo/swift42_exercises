@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Current Date:"; ObjectID = "2GK-VC-SRH"; */
+"2GK-VC-SRH.text" = "Aujourd'hui:";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "2du-Bg-rQ0"; */
+"2du-Bg-rQ0.normalTitle" = "Envoyer";
+
+/* Class = "UILabel"; text = "Distance:"; ObjectID = "VQI-01-jQ7"; */
+"VQI-01-jQ7.text" = "Distance:";
+
+/* Class = "UILabel"; text = "Your Name: "; ObjectID = "vAB-gB-h2S"; */
+"vAB-gB-h2S.text" = "Votre nom: ";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "vbP-QQ-TgN"; */
+"vbP-QQ-TgN.text" = "Prix:";
+
+/* Class = "UILabel"; text = "Temperature:"; ObjectID = "zvs-dl-Xjt"; */
+"zvs-dl-Xjt.text" = "Température:";

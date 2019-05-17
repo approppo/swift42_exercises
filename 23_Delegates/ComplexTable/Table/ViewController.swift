@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             style: UITableView.Style.plain)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UINib(nibName: "FlagTableViewCell", bundle: nil), forCellReuseIdentifier: "flag")
+        
         self.view = tableView
     }
 
@@ -89,17 +91,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // tag::cell[]
     func tableView(_ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        if cell == nil {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        
+        if var cell = tableView.dequeueReusableCell(withIdentifier: "flag") as? FlagTableViewCell {
+            let currentCountry = country(for: indexPath)
+            cell.gif.image = UIImage(named: currentCountry["flag"]!)
+            cell.label.text = currentCountry["name"]
+            return cell
         }
+        return UITableViewCell()
+        
 
-        let currentCountry = country(for: indexPath)
-        cell?.textLabel?.text = currentCountry["name"]
-        cell?.detailTextLabel?.text = currentCountry["continent"]
-        cell?.imageView?.image = UIImage(named: currentCountry["flag"]!)
-        return cell!
+        
+//        if cell == nil {
+//            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+//        }
+//
+//        let currentCountry = country(for: indexPath)
+//        cell?.textLabel?.text = currentCountry["name"]
+//        cell?.detailTextLabel?.text = currentCountry["continent"]
+//        cell?.imageView?.image = UIImage(named: currentCountry["flag"]!)
+        //return cell!
     }
     // end::cell[]
 

@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Current Date:"; ObjectID = "2GK-VC-SRH"; */
+"2GK-VC-SRH.text" = "Current Date:";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "2du-Bg-rQ0"; */
+"2du-Bg-rQ0.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Distance:"; ObjectID = "VQI-01-jQ7"; */
+"VQI-01-jQ7.text" = "Distance:";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "jDZ-Yj-5eh"; */
+"jDZ-Yj-5eh.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Your Name: "; ObjectID = "vAB-gB-h2S"; */
+"vAB-gB-h2S.text" = "Your Name: ";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "vbP-QQ-TgN"; */
+"vbP-QQ-TgN.text" = "Price:";
+
+/* Class = "UILabel"; text = "Temperature:"; ObjectID = "zvs-dl-Xjt"; */
+"zvs-dl-Xjt.text" = "Temperature:";

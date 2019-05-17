@@ -1,0 +1,14 @@
+
+/* Class = "UILabel"; text = "Current Date:"; ObjectID = "2GK-VC-SRH"; */
+"2GK-VC-SRH.text" = "Current Date:";
+
+/* Class = "UILabel"; text = "Distance:"; ObjectID = "VQI-01-jQ7"; */
+"VQI-01-jQ7.text" = "Distance:";
+
+/* Class = "UILabel"; text = "Your Name: "; ObjectID = "vAB-gB-h2S"; */
+"vAB-gB-h2S.text" = "Your Name: ";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "vbP-QQ-TgN"; */
+"vbP-QQ-TgN.text" = "Price:";
+
+"2du-Bg-rQ0.text" = "Send";

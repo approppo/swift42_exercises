@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .lightGray
         self.view = collectionView
     }
 
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
         continents = Array(continentNames).sorted()
     }
-
+   
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return continents.count
     }

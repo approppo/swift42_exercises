@@ -51,6 +51,8 @@
 		B0034EE11E52FDC1001AA7CF /* vanuatu.gif in Resources */ = {isa = PBXBuildFile; fileRef = B0034EBB1E52FDC0001AA7CF /* vanuatu.gif */; };
 		B0034EE21E52FDC1001AA7CF /* vietnam.gif in Resources */ = {isa = PBXBuildFile; fileRef = B0034EBC1E52FDC0001AA7CF /* vietnam.gif */; };
 		B0034EE81E530350001AA7CF /* Countries.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0034EE71E530350001AA7CF /* Countries.plist */; };
+		D2E52E62228B425100B5012E /* FlagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E52E60228B425100B5012E /* FlagTableViewCell.swift */; };
+		D2E52E63228B425100B5012E /* FlagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E52E61228B425100B5012E /* FlagTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		B0034EBB1E52FDC0001AA7CF /* vanuatu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vanuatu.gif; sourceTree = "<group>"; };
 		B0034EBC1E52FDC0001AA7CF /* vietnam.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vietnam.gif; sourceTree = "<group>"; };
 		B0034EE71E530350001AA7CF /* Countries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Countries.plist; sourceTree = "<group>"; };
+		D2E52E60228B425100B5012E /* FlagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagTableViewCell.swift; sourceTree = "<group>"; };
+		D2E52E61228B425100B5012E /* FlagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				B0034E8D1E52F072001AA7CF /* LaunchScreen.storyboard */,
 				B0034E901E52F072001AA7CF /* Info.plist */,
 				B0034EE71E530350001AA7CF /* Countries.plist */,
+				D2E52E60228B425100B5012E /* FlagTableViewCell.swift */,
+				D2E52E61228B425100B5012E /* FlagTableViewCell.xib */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 				B0034EC21E52FDC0001AA7CF /* bosnia_and_herzegovina.gif in Resources */,
 				B0034ED61E52FDC0001AA7CF /* malta.gif in Resources */,
 				B0034EC91E52FDC0001AA7CF /* honduras.gif in Resources */,
+				D2E52E63228B425100B5012E /* FlagTableViewCell.xib in Resources */,
 				B0034E8F1E52F072001AA7CF /* LaunchScreen.storyboard in Resources */,
 				B0034EDC1E52FDC1001AA7CF /* puerto_rico.gif in Resources */,
 				B0034EE01E52FDC1001AA7CF /* united_kingdom.gif in Resources */,
@@ -304,6 +311,7 @@
 			files = (
 				B0034E871E52F072001AA7CF /* ViewController.swift in Sources */,
 				B0034E851E52F072001AA7CF /* AppDelegate.swift in Sources */,
+				D2E52E62228B425100B5012E /* FlagTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
